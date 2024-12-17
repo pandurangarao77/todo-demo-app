@@ -79,7 +79,7 @@ tasks.named('jar') {
     } with jar
     **/
 }
-
+/*
 def dependsDir = "${buildDir}/libs/dependencies/"
     task copyDependencies(type: Copy) {
         from configurations.implementation
@@ -95,4 +95,4 @@ def dependsDir = "${buildDir}/libs/dependencies/"
         }
         with jar
     }
-
+*/
