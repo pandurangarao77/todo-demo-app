@@ -86,7 +86,7 @@ def dependsDir = "${buildDir}/libs/dependencies/"
         into "${dependsDir}"
     }
     task createJar(dependsOn: copyDependencies, type: Jar) {
-       canBeResolved=true
+      
         manifest {
            
             attributes('SAMPLE': 'io.quarkus.sample',
