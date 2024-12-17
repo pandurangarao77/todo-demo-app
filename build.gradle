@@ -79,5 +79,19 @@ tasks.named('jar') {
     } with jar
     **/
 }
- 
+
+def dependsDir = "${buildDir}/libs/dependencies/"
+    task copyDependencies(type: Copy) {
+        from configurations.compile
+        into "${dependsDir}"
+    }
+    task createJar(dependsOn: copyDependencies, type: Jar) {
+      
+        manifest {
+            attributes('Main-Class': 'com.example.gradle.App',
+                    'Class-Path': configurations.compile.collect { 'dependencies/' + it.getName() }.join(' ')
+            )
+        }
+        with jar
+    }
 
