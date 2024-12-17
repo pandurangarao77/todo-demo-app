@@ -39,7 +39,7 @@ dependencies {
 group = 'io.quarkus.sample'
 version = '1.0-SNAPSHOT'
 description = 'TODOS Application'
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+//java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 publishing {
     publications {
