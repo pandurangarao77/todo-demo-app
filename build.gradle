@@ -79,7 +79,7 @@ tasks.named('jar') {
     } with jar
     **/
 }
-
+canBeResolved=true
 def dependsDir = "${buildDir}/libs/dependencies/"
     task copyDependencies(type: Copy) {
         from configurations.implementation
