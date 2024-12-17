@@ -63,3 +63,7 @@ test{
         ignoreFailures = true
         
 }
+
+shadowJar {
+    baseName = group + version
+}
