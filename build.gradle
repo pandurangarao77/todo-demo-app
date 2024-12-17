@@ -79,7 +79,7 @@ tasks.named('jar') {
     } with jar
     **/
 }
-canBeResolved=true
+
 def dependsDir = "${buildDir}/libs/dependencies/"
     task copyDependencies(type: Copy) {
         from configurations.implementation
@@ -88,6 +88,7 @@ def dependsDir = "${buildDir}/libs/dependencies/"
     task createJar(dependsOn: copyDependencies, type: Jar) {
       
         manifest {
+            canBeResolved=true
             attributes('Main-Class': 'com.example.gradle.App',
                     'Class-Path': configurations.implementation.collect { 'dependencies/' + it.getName() }.join(' ')
             )
