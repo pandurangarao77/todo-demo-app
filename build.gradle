@@ -39,7 +39,8 @@ dependencies {
 group = 'io.quarkus.sample'
 version = '1.0-SNAPSHOT'
 description = 'TODOS Application'
-java.sourceCompatibility = 17
+java.sourceCompatibility = JavaVersion.VERSION_17
+
 /**
 compileOptions {
     sourceCompatibility 17
