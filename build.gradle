@@ -16,6 +16,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.hibernate.common:hibernate-commons-annotations:7.0.3.Final'
     implementation 'io.quarkus:quarkus-rest:3.17.3'
     implementation 'io.quarkus:quarkus-rest-jsonb:3.17.3'
     implementation 'io.quarkus:quarkus-smallrye-openapi:3.17.3'
