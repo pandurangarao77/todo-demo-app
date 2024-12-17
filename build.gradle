@@ -11,8 +11,8 @@ plugins {
 repositories {
     mavenLocal()
     maven {
-        url = uri('https://repo.maven.apache.org/maven2/')
-        url = uri('https://central.sonatype.com/artifact/')
+        url "https://repo.maven.apache.org/maven2/"
+        url "https://central.sonatype.com/artifact/"
     }
 }
 
