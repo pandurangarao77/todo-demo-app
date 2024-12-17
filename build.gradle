@@ -86,10 +86,10 @@ def dependsDir = "${buildDir}/libs/dependencies/"
         into "${dependsDir}"
     }
     task createJar(dependsOn: copyDependencies, type: Jar) {
-      
+       canBeResolved=true
         manifest {
-            canBeResolved=true
-            attributes('Main-Class': 'com.example.gradle.App',
+           
+            attributes('SAMPLE': 'io.quarkus.sample',
                     'Class-Path': configurations.implementation.collect { 'dependencies/' + it.getName() }.join(' ')
             )
         }
