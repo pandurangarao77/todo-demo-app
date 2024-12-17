@@ -64,6 +64,6 @@ test{
         
 }
 
-shadowJar {
+Jar {
     baseName = group + version
 }
