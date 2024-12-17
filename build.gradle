@@ -40,7 +40,10 @@ group = 'io.quarkus.sample'
 version = '1.0-SNAPSHOT'
 description = 'TODOS Application'
 //java.sourceCompatibility = JavaVersion.VERSION_1_8
-
+compileOptions {
+    sourceCompatibility 17
+    targetCompatibility 17
+}
 publishing {
     publications {
         maven(MavenPublication) {
