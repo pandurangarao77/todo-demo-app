@@ -72,8 +72,5 @@ tasks.named('jar') {
         attributes('SAMPLE': 'io.quarkus.sample')
     }
 }
-    from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-    } with jar
-    
-}
+ 
+
