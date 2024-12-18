@@ -33,4 +33,4 @@ commands:
     exec:
       label: '2. Podman Run Sample'
       component: tooling-container
-      commandLine: podman run --name httpd -d -p 8085:8085 python python -m http.server 8085
+      commandLine: podman run --name httpd -d -p 8080:8080 python python -m http.server 8080
